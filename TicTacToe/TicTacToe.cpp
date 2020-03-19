@@ -288,22 +288,19 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 				{
 	
 					int v1 = rand() % 4;
-						if (v1==0)
+					if (v1==0)
 						DrawIcon(hdc, rect.left + CELL_SIZE / 2 - 16, rect.top + CELL_SIZE / 2 - 16, hIcon1);
-						if (v1==1)
+					if (v1==1)
 						DrawIcon(hdc, rect.left + CELL_SIZE / 2 - 16, rect.top + CELL_SIZE / 2 - 16, hIcon2);
-						if(v1==2)
+					if(v1==2)
 						DrawIcon(hdc, rect.left + CELL_SIZE / 2 - 16, rect.top + CELL_SIZE / 2 - 16, hIcon4);
-						if(v1==3)
+					if(v1==3)
 						DrawIcon(hdc, rect.left + CELL_SIZE / 2 - 16, rect.top + CELL_SIZE / 2 - 16, hIcon3);
-						//if (v1 == 0)
-						//	DrawIcon(hdc, rect.left + CELL_SIZE / 2 - 16, rect.top + CELL_SIZE / 2 - 16, hPrueba);
-						//if (v1 == 1)
-						//	DrawIcon(hdc, rect.left + CELL_SIZE / 2 - 16, rect.top + CELL_SIZE / 2 - 16, hPrueba1);
-						//if (v1 == 2)
-						//	DrawIcon(hdc, rect.left + CELL_SIZE / 2 - 16, rect.top + CELL_SIZE / 2 - 16, hPrueba2);
-						//if (v1 == 3)
-						//	DrawIcon(hdc, rect.left + CELL_SIZE / 2 - 16, rect.top + CELL_SIZE / 2 - 16, hPrueba3);
+
+					if (GetCell(hWnd, index, &rect) == GetCell(hWnd, index+1, &rect))
+					{
+						std::cout << "par";
+					}
 				}
 			}
 		}

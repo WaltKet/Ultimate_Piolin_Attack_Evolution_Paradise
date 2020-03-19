@@ -1,3 +1,4 @@
 ﻿  TicTacToe.cpp
-D:\Users\enriq\Desktop\Practicas\Bejeweled\TicTacToe\TicTacToe\TicTacToe.cpp(181): warning C4715:  'GetCell': no todas las rutas de acceso de control devuelven un valor
-  TicTacToe.vcxproj -> D:\Users\enriq\Desktop\Practicas\Bejeweled\TicTacToe\Debug\TicTacToe.exe
+C:\Users\walte\Documents\GitHub\Ultimate_Piolin_Attack_Evolution_Paradise\TicTacToe\TicTacToe.cpp(302): error C2039: 'cout': is not a member of 'std'
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stddef.h(19): note: see declaration of 'std'
+C:\Users\walte\Documents\GitHub\Ultimate_Piolin_Attack_Evolution_Paradise\TicTacToe\TicTacToe.cpp(302): error C2065: 'cout': undeclared identifier
